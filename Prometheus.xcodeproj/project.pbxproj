@@ -7,23 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E05CD9C235F55F900D1172B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CD9B235F55F900D1172B /* Weather.swift */; };
+		4E05CD9E235F597900D1172B /* WeatherHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CD9D235F597900D1172B /* WeatherHistory.swift */; };
+		4E05CDA0235F6EF600D1172B /* WindBearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CD9F235F6EF600D1172B /* WindBearing.swift */; };
+		4E05CDA2236020AE00D1172B /* String+Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDA1236020AE00D1172B /* String+Sizing.swift */; };
+		4E05CDA42360228600D1172B /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDA32360228600D1172B /* NSObject+ClassName.swift */; };
+		4E05CDA6236022F000D1172B /* String+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDA5236022F000D1172B /* String+Attributes.swift */; };
+		4E05CDA8236026D300D1172B /* LocationOverviewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDA7236026D200D1172B /* LocationOverviewCellModel.swift */; };
+		4E05CDAB23602B7100D1172B /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDAA23602B7100D1172B /* AddLocationViewController.swift */; };
+		4E05CDAD23602F1B00D1172B /* UINavigationBar+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDAC23602F1B00D1172B /* UINavigationBar+Color.swift */; };
+		4E05CDAF23602FDF00D1172B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDAE23602FDF00D1172B /* AppConstants.swift */; };
+		4E05CDB123602FF400D1172B /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDB023602FF400D1172B /* UIColor+RGB.swift */; };
+		4E05CDB3236031BD00D1172B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDB2236031BD00D1172B /* Utils.swift */; };
+		4E05CDB52360385100D1172B /* PTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDB42360385100D1172B /* PTButton.swift */; };
+		4E05CDBA236052CD00D1172B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDB9236052CD00D1172B /* MapViewController.swift */; };
+		4E05CDBC2360832D00D1172B /* AddLocationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDBB2360832D00D1172B /* AddLocationTitleView.swift */; };
+		4E05CDBE2360958700D1172B /* LocationsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDBD2360958700D1172B /* LocationsStore.swift */; };
+		4E05CDC02360B8E400D1172B /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDBF2360B8E400D1172B /* LoaderViewController.swift */; };
+		4E05CDC22360C52400D1172B /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDC12360C52400D1172B /* EmptyViewController.swift */; };
+		4E05CDC42360CB7600D1172B /* PrometheusContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDC32360CB7600D1172B /* PrometheusContainerViewController.swift */; };
+		4E05CDC72360D6D100D1172B /* AddLocationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDC62360D6D100D1172B /* AddLocationToolbar.swift */; };
 		4EB0D5D0235EE90300F5A4E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5CF235EE90300F5A4E2 /* AppDelegate.swift */; };
-		4EB0D5D2235EE90300F5A4E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5D1235EE90300F5A4E2 /* SceneDelegate.swift */; };
-		4EB0D5D4235EE90300F5A4E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5D3235EE90300F5A4E2 /* ViewController.swift */; };
-		4EB0D5D7235EE90300F5A4E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB0D5D5235EE90300F5A4E2 /* Main.storyboard */; };
+		4EB0D5D4235EE90300F5A4E2 /* LocationsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5D3235EE90300F5A4E2 /* LocationsFeedViewController.swift */; };
 		4EB0D5D9235EE90400F5A4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB0D5D8235EE90400F5A4E2 /* Assets.xcassets */; };
 		4EB0D5DC235EE90400F5A4E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB0D5DA235EE90400F5A4E2 /* LaunchScreen.storyboard */; };
+		4EB0D5EC235EEF4000F5A4E2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5EB235EEF4000F5A4E2 /* Coordinator.swift */; };
+		4EB0D5EE235EEF7400F5A4E2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5ED235EEF7400F5A4E2 /* AppCoordinator.swift */; };
+		4EB0D5F0235F061D00F5A4E2 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5EF235F061D00F5A4E2 /* UIViewController+Child.swift */; };
+		4EB0D5F2235F065100F5A4E2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5F1235F065100F5A4E2 /* NetworkService.swift */; };
+		4EB0D5F4235F07A500F5A4E2 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5F3235F07A500F5A4E2 /* DependencyContainer.swift */; };
+		4EB0D5F6235F0A0600F5A4E2 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5F5235F0A0600F5A4E2 /* FeedCoordinator.swift */; };
+		4EB0D5FC235F11B100F5A4E2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5FB235F11B100F5A4E2 /* Location.swift */; };
+		4EB0D5FE235F138C00F5A4E2 /* LocationsFeedContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5FD235F138C00F5A4E2 /* LocationsFeedContentViewController.swift */; };
+		4EB0D60B235F1F5E00F5A4E2 /* LocationOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D609235F1F5E00F5A4E2 /* LocationOverviewCell.swift */; };
+		4EB0D60C235F1F5E00F5A4E2 /* LocationOverviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EB0D60A235F1F5E00F5A4E2 /* LocationOverviewCell.xib */; };
+		4EB0D60E235F207700F5A4E2 /* UICollectionView+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D60D235F207700F5A4E2 /* UICollectionView+Empty.swift */; };
+		4EB0D610235F2C7F00F5A4E2 /* LocationsFeedContentViewController+DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D60F235F2C7F00F5A4E2 /* LocationsFeedContentViewController+DataTypes.swift */; };
+		4EB0D613235F3E4E00F5A4E2 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D612235F3E4E00F5A4E2 /* Api.swift */; };
+		4EB0D615235F45D800F5A4E2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D614235F45D800F5A4E2 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E05CD9B235F55F900D1172B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		4E05CD9D235F597900D1172B /* WeatherHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHistory.swift; sourceTree = "<group>"; };
+		4E05CD9F235F6EF600D1172B /* WindBearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindBearing.swift; sourceTree = "<group>"; };
+		4E05CDA1236020AE00D1172B /* String+Sizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Sizing.swift"; sourceTree = "<group>"; };
+		4E05CDA32360228600D1172B /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		4E05CDA5236022F000D1172B /* String+Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Attributes.swift"; sourceTree = "<group>"; };
+		4E05CDA7236026D200D1172B /* LocationOverviewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationOverviewCellModel.swift; sourceTree = "<group>"; };
+		4E05CDAA23602B7100D1172B /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		4E05CDAC23602F1B00D1172B /* UINavigationBar+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Color.swift"; sourceTree = "<group>"; };
+		4E05CDAE23602FDF00D1172B /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		4E05CDB023602FF400D1172B /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		4E05CDB2236031BD00D1172B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4E05CDB42360385100D1172B /* PTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTButton.swift; sourceTree = "<group>"; };
+		4E05CDB9236052CD00D1172B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4E05CDBB2360832D00D1172B /* AddLocationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationTitleView.swift; sourceTree = "<group>"; };
+		4E05CDBD2360958700D1172B /* LocationsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsStore.swift; sourceTree = "<group>"; };
+		4E05CDBF2360B8E400D1172B /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		4E05CDC12360C52400D1172B /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		4E05CDC32360CB7600D1172B /* PrometheusContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrometheusContainerViewController.swift; sourceTree = "<group>"; };
+		4E05CDC62360D6D100D1172B /* AddLocationToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationToolbar.swift; sourceTree = "<group>"; };
 		4EB0D5CC235EE90300F5A4E2 /* Prometheus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prometheus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB0D5CF235EE90300F5A4E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EB0D5D1235EE90300F5A4E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4EB0D5D3235EE90300F5A4E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4EB0D5D6235EE90300F5A4E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EB0D5D3235EE90300F5A4E2 /* LocationsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsFeedViewController.swift; sourceTree = "<group>"; };
 		4EB0D5D8235EE90400F5A4E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EB0D5DB235EE90400F5A4E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EB0D5DD235EE90400F5A4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB0D5EB235EEF4000F5A4E2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4EB0D5ED235EEF7400F5A4E2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4EB0D5EF235F061D00F5A4E2 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
+		4EB0D5F1235F065100F5A4E2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4EB0D5F3235F07A500F5A4E2 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		4EB0D5F5235F0A0600F5A4E2 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		4EB0D5FB235F11B100F5A4E2 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4EB0D5FD235F138C00F5A4E2 /* LocationsFeedContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsFeedContentViewController.swift; sourceTree = "<group>"; };
+		4EB0D609235F1F5E00F5A4E2 /* LocationOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationOverviewCell.swift; sourceTree = "<group>"; };
+		4EB0D60A235F1F5E00F5A4E2 /* LocationOverviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationOverviewCell.xib; sourceTree = "<group>"; };
+		4EB0D60D235F207700F5A4E2 /* UICollectionView+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Empty.swift"; sourceTree = "<group>"; };
+		4EB0D60F235F2C7F00F5A4E2 /* LocationsFeedContentViewController+DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationsFeedContentViewController+DataTypes.swift"; sourceTree = "<group>"; };
+		4EB0D612235F3E4E00F5A4E2 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		4EB0D614235F45D800F5A4E2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +101,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E05CDA923602B5D00D1172B /* AddLocationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E05CDAA23602B7100D1172B /* AddLocationViewController.swift */,
+				4E05CDB9236052CD00D1172B /* MapViewController.swift */,
+				4E05CDC52360D6BF00D1172B /* Views */,
+			);
+			path = AddLocationViewController;
+			sourceTree = "<group>";
+		};
+		4E05CDB62360502E00D1172B /* PrometheusContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E05CDC32360CB7600D1172B /* PrometheusContainerViewController.swift */,
+			);
+			path = PrometheusContainerViewController;
+			sourceTree = "<group>";
+		};
+		4E05CDC52360D6BF00D1172B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E05CDBB2360832D00D1172B /* AddLocationTitleView.swift */,
+				4E05CDC62360D6D100D1172B /* AddLocationToolbar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4EB0D5C3235EE90200F5A4E2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +147,132 @@
 		4EB0D5CE235EE90300F5A4E2 /* Prometheus */ = {
 			isa = PBXGroup;
 			children = (
-				4EB0D5CF235EE90300F5A4E2 /* AppDelegate.swift */,
-				4EB0D5D1235EE90300F5A4E2 /* SceneDelegate.swift */,
-				4EB0D5D3235EE90300F5A4E2 /* ViewController.swift */,
-				4EB0D5D5235EE90300F5A4E2 /* Main.storyboard */,
-				4EB0D5D8235EE90400F5A4E2 /* Assets.xcassets */,
-				4EB0D5DA235EE90400F5A4E2 /* LaunchScreen.storyboard */,
+				4EB0D5E4235EEE0B00F5A4E2 /* AppDelegate */,
+				4EB0D5E8235EEEFE00F5A4E2 /* Coordinators */,
+				4EB0D5E7235EEE4D00F5A4E2 /* Services */,
+				4EB0D5E9235EEF0900F5A4E2 /* Shared Models */,
+				4EB0D5EA235EEF1200F5A4E2 /* Shared Views */,
+				4EB0D5E3235EEDDF00F5A4E2 /* View Controllers */,
+				4EB0D5E6235EEE4300F5A4E2 /* Vendors */,
+				4EB0D5E5235EEE2200F5A4E2 /* Resources */,
 				4EB0D5DD235EE90400F5A4E2 /* Info.plist */,
 			);
 			path = Prometheus;
+			sourceTree = "<group>";
+		};
+		4EB0D5E3235EEDDF00F5A4E2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E05CDB62360502E00D1172B /* PrometheusContainerViewController */,
+				4E05CDA923602B5D00D1172B /* AddLocationViewController */,
+				4EB0D5FF235F1B7500F5A4E2 /* LocationsFeedViewController */,
+				4EB0D5DA235EE90400F5A4E2 /* LaunchScreen.storyboard */,
+				4E05CDBF2360B8E400D1172B /* LoaderViewController.swift */,
+				4E05CDC12360C52400D1172B /* EmptyViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4EB0D5E4235EEE0B00F5A4E2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0D5CF235EE90300F5A4E2 /* AppDelegate.swift */,
+				4E05CDAE23602FDF00D1172B /* AppConstants.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4EB0D5E5235EEE2200F5A4E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0D5D8235EE90400F5A4E2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4EB0D5E6235EEE4300F5A4E2 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				4E05CDB2236031BD00D1172B /* Utils.swift */,
+				4EB0D5EF235F061D00F5A4E2 /* UIViewController+Child.swift */,
+				4EB0D60D235F207700F5A4E2 /* UICollectionView+Empty.swift */,
+				4E05CDA1236020AE00D1172B /* String+Sizing.swift */,
+				4E05CDA32360228600D1172B /* NSObject+ClassName.swift */,
+				4E05CDA5236022F000D1172B /* String+Attributes.swift */,
+				4E05CDAC23602F1B00D1172B /* UINavigationBar+Color.swift */,
+				4E05CDB023602FF400D1172B /* UIColor+RGB.swift */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		4EB0D5E7235EEE4D00F5A4E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0D5F3235F07A500F5A4E2 /* DependencyContainer.swift */,
+				4EB0D611235F3E4000F5A4E2 /* Networking */,
+				4E05CDBD2360958700D1172B /* LocationsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4EB0D5E8235EEEFE00F5A4E2 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0D5EB235EEF4000F5A4E2 /* Coordinator.swift */,
+				4EB0D5ED235EEF7400F5A4E2 /* AppCoordinator.swift */,
+				4EB0D5F5235F0A0600F5A4E2 /* FeedCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		4EB0D5E9235EEF0900F5A4E2 /* Shared Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0D5FB235F11B100F5A4E2 /* Location.swift */,
+				4E05CD9B235F55F900D1172B /* Weather.swift */,
+				4E05CD9F235F6EF600D1172B /* WindBearing.swift */,
+				4EB0D614235F45D800F5A4E2 /* Result.swift */,
+				4E05CD9D235F597900D1172B /* WeatherHistory.swift */,
+			);
+			path = "Shared Models";
+			sourceTree = "<group>";
+		};
+		4EB0D5EA235EEF1200F5A4E2 /* Shared Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E05CDB42360385100D1172B /* PTButton.swift */,
+			);
+			path = "Shared Views";
+			sourceTree = "<group>";
+		};
+		4EB0D5FF235F1B7500F5A4E2 /* LocationsFeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0D5D3235EE90300F5A4E2 /* LocationsFeedViewController.swift */,
+				4EB0D5FD235F138C00F5A4E2 /* LocationsFeedContentViewController.swift */,
+				4EB0D60F235F2C7F00F5A4E2 /* LocationsFeedContentViewController+DataTypes.swift */,
+				4EB0D600235F1BBB00F5A4E2 /* Cells */,
+			);
+			path = LocationsFeedViewController;
+			sourceTree = "<group>";
+		};
+		4EB0D600235F1BBB00F5A4E2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E05CDA7236026D200D1172B /* LocationOverviewCellModel.swift */,
+				4EB0D609235F1F5E00F5A4E2 /* LocationOverviewCell.swift */,
+				4EB0D60A235F1F5E00F5A4E2 /* LocationOverviewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4EB0D611235F3E4000F5A4E2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0D612235F3E4E00F5A4E2 /* Api.swift */,
+				4EB0D5F1235F065100F5A4E2 /* NetworkService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +333,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB0D60C235F1F5E00F5A4E2 /* LocationOverviewCell.xib in Resources */,
 				4EB0D5DC235EE90400F5A4E2 /* LaunchScreen.storyboard in Resources */,
 				4EB0D5D9235EE90400F5A4E2 /* Assets.xcassets in Resources */,
-				4EB0D5D7235EE90300F5A4E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +346,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB0D5D4235EE90300F5A4E2 /* ViewController.swift in Sources */,
+				4E05CDBC2360832D00D1172B /* AddLocationTitleView.swift in Sources */,
+				4E05CDAB23602B7100D1172B /* AddLocationViewController.swift in Sources */,
+				4EB0D5F6235F0A0600F5A4E2 /* FeedCoordinator.swift in Sources */,
+				4E05CDB3236031BD00D1172B /* Utils.swift in Sources */,
+				4E05CDC42360CB7600D1172B /* PrometheusContainerViewController.swift in Sources */,
+				4E05CD9E235F597900D1172B /* WeatherHistory.swift in Sources */,
+				4E05CDAD23602F1B00D1172B /* UINavigationBar+Color.swift in Sources */,
+				4EB0D5F4235F07A500F5A4E2 /* DependencyContainer.swift in Sources */,
+				4EB0D5FC235F11B100F5A4E2 /* Location.swift in Sources */,
+				4EB0D5F0235F061D00F5A4E2 /* UIViewController+Child.swift in Sources */,
+				4EB0D5EE235EEF7400F5A4E2 /* AppCoordinator.swift in Sources */,
+				4EB0D5D4235EE90300F5A4E2 /* LocationsFeedViewController.swift in Sources */,
+				4E05CDC02360B8E400D1172B /* LoaderViewController.swift in Sources */,
+				4E05CDA6236022F000D1172B /* String+Attributes.swift in Sources */,
+				4EB0D615235F45D800F5A4E2 /* Result.swift in Sources */,
+				4E05CDA0235F6EF600D1172B /* WindBearing.swift in Sources */,
+				4E05CDC22360C52400D1172B /* EmptyViewController.swift in Sources */,
+				4E05CDB52360385100D1172B /* PTButton.swift in Sources */,
+				4EB0D60E235F207700F5A4E2 /* UICollectionView+Empty.swift in Sources */,
+				4E05CD9C235F55F900D1172B /* Weather.swift in Sources */,
+				4E05CDBE2360958700D1172B /* LocationsStore.swift in Sources */,
 				4EB0D5D0235EE90300F5A4E2 /* AppDelegate.swift in Sources */,
-				4EB0D5D2235EE90300F5A4E2 /* SceneDelegate.swift in Sources */,
+				4E05CDB123602FF400D1172B /* UIColor+RGB.swift in Sources */,
+				4EB0D5FE235F138C00F5A4E2 /* LocationsFeedContentViewController.swift in Sources */,
+				4EB0D60B235F1F5E00F5A4E2 /* LocationOverviewCell.swift in Sources */,
+				4EB0D610235F2C7F00F5A4E2 /* LocationsFeedContentViewController+DataTypes.swift in Sources */,
+				4EB0D5F2235F065100F5A4E2 /* NetworkService.swift in Sources */,
+				4E05CDAF23602FDF00D1172B /* AppConstants.swift in Sources */,
+				4E05CDA8236026D300D1172B /* LocationOverviewCellModel.swift in Sources */,
+				4E05CDA2236020AE00D1172B /* String+Sizing.swift in Sources */,
+				4E05CDC72360D6D100D1172B /* AddLocationToolbar.swift in Sources */,
+				4E05CDA42360228600D1172B /* NSObject+ClassName.swift in Sources */,
+				4EB0D613235F3E4E00F5A4E2 /* Api.swift in Sources */,
+				4E05CDBA236052CD00D1172B /* MapViewController.swift in Sources */,
+				4EB0D5EC235EEF4000F5A4E2 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4EB0D5D5235EE90300F5A4E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EB0D5D6235EE90300F5A4E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4EB0D5DA235EE90400F5A4E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9M2PQ869PY;
 				INFOPLIST_FILE = Prometheus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +527,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pyshnov.Prometheus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9M2PQ869PY;
 				INFOPLIST_FILE = Prometheus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pyshnov.Prometheus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
