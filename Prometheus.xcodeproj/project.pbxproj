@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0036BDA33346BD70F22009 /* Pods_Prometheus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6331A541C28AE439E0F76A46 /* Pods_Prometheus.framework */; };
 		4E05CD9C235F55F900D1172B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CD9B235F55F900D1172B /* Weather.swift */; };
 		4E05CD9E235F597900D1172B /* WeatherHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CD9D235F597900D1172B /* WeatherHistory.swift */; };
 		4E05CDA0235F6EF600D1172B /* WindBearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CD9F235F6EF600D1172B /* WindBearing.swift */; };
@@ -27,6 +28,13 @@
 		4E05CDC22360C52400D1172B /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDC12360C52400D1172B /* EmptyViewController.swift */; };
 		4E05CDC42360CB7600D1172B /* PrometheusContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDC32360CB7600D1172B /* PrometheusContainerViewController.swift */; };
 		4E05CDC72360D6D100D1172B /* AddLocationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05CDC62360D6D100D1172B /* AddLocationToolbar.swift */; };
+		4E986C8D23617C7400641344 /* LocationDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E986C8B23617C7400641344 /* LocationDetailsCell.swift */; };
+		4E986C91236180F700641344 /* LocationPlainDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E986C8F236180F700641344 /* LocationPlainDetailsCell.swift */; };
+		4E986C92236180F700641344 /* LocationPlainDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E986C90236180F700641344 /* LocationPlainDetailsCell.xib */; };
+		4E986C942361878B00641344 /* LocationDetailsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E986C932361878B00641344 /* LocationDetailsCellModel.swift */; };
+		4E986C962361900000641344 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E986C952361900000641344 /* GradientView.swift */; };
+		4E986C9823619A7800641344 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E986C9723619A7800641344 /* Language.swift */; };
+		4E986C9A23619A8D00641344 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E986C9923619A8D00641344 /* Units.swift */; };
 		4EB0D5D0235EE90300F5A4E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5CF235EE90300F5A4E2 /* AppDelegate.swift */; };
 		4EB0D5D4235EE90300F5A4E2 /* LocationsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D5D3235EE90300F5A4E2 /* LocationsFeedViewController.swift */; };
 		4EB0D5D9235EE90400F5A4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB0D5D8235EE90400F5A4E2 /* Assets.xcassets */; };
@@ -45,9 +53,17 @@
 		4EB0D610235F2C7F00F5A4E2 /* LocationsFeedContentViewController+DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D60F235F2C7F00F5A4E2 /* LocationsFeedContentViewController+DataTypes.swift */; };
 		4EB0D613235F3E4E00F5A4E2 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D612235F3E4E00F5A4E2 /* Api.swift */; };
 		4EB0D615235F45D800F5A4E2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0D614235F45D800F5A4E2 /* Result.swift */; };
+		4ED402BD2361C5B10022EB04 /* LocationWindSpeedDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED402BB2361C5B10022EB04 /* LocationWindSpeedDetailsCell.swift */; };
+		4ED402BE2361C5B10022EB04 /* LocationWindSpeedDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED402BC2361C5B10022EB04 /* LocationWindSpeedDetailsCell.xib */; };
+		4EDB2B17236109AE00B2DF2D /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2B16236109AE00B2DF2D /* Database.swift */; };
+		4EDB2B1A23610AD300B2DF2D /* RealmLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2B1923610AD300B2DF2D /* RealmLocation.swift */; };
+		4EDB2B1C23610DF500B2DF2D /* RealmAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2B1B23610DF500B2DF2D /* RealmAdapter.swift */; };
+		4EDB2B1E23611E1900B2DF2D /* RealmWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2B1D23611E1900B2DF2D /* RealmWeather.swift */; };
+		4EDB2B2023611E2700B2DF2D /* RealmWeatherHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2B1F23611E2700B2DF2D /* RealmWeatherHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10F47B775B179A6976B20D58 /* Pods-Prometheus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prometheus.debug.xcconfig"; path = "Target Support Files/Pods-Prometheus/Pods-Prometheus.debug.xcconfig"; sourceTree = "<group>"; };
 		4E05CD9B235F55F900D1172B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		4E05CD9D235F597900D1172B /* WeatherHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHistory.swift; sourceTree = "<group>"; };
 		4E05CD9F235F6EF600D1172B /* WindBearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindBearing.swift; sourceTree = "<group>"; };
@@ -68,6 +84,13 @@
 		4E05CDC12360C52400D1172B /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		4E05CDC32360CB7600D1172B /* PrometheusContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrometheusContainerViewController.swift; sourceTree = "<group>"; };
 		4E05CDC62360D6D100D1172B /* AddLocationToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationToolbar.swift; sourceTree = "<group>"; };
+		4E986C8B23617C7400641344 /* LocationDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsCell.swift; sourceTree = "<group>"; };
+		4E986C8F236180F700641344 /* LocationPlainDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPlainDetailsCell.swift; sourceTree = "<group>"; };
+		4E986C90236180F700641344 /* LocationPlainDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationPlainDetailsCell.xib; sourceTree = "<group>"; };
+		4E986C932361878B00641344 /* LocationDetailsCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsCellModel.swift; sourceTree = "<group>"; };
+		4E986C952361900000641344 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4E986C9723619A7800641344 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		4E986C9923619A8D00641344 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		4EB0D5CC235EE90300F5A4E2 /* Prometheus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prometheus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB0D5CF235EE90300F5A4E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EB0D5D3235EE90300F5A4E2 /* LocationsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsFeedViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +111,15 @@
 		4EB0D60F235F2C7F00F5A4E2 /* LocationsFeedContentViewController+DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationsFeedContentViewController+DataTypes.swift"; sourceTree = "<group>"; };
 		4EB0D612235F3E4E00F5A4E2 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		4EB0D614235F45D800F5A4E2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		4ED402BB2361C5B10022EB04 /* LocationWindSpeedDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWindSpeedDetailsCell.swift; sourceTree = "<group>"; };
+		4ED402BC2361C5B10022EB04 /* LocationWindSpeedDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationWindSpeedDetailsCell.xib; sourceTree = "<group>"; };
+		4EDB2B16236109AE00B2DF2D /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		4EDB2B1923610AD300B2DF2D /* RealmLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmLocation.swift; sourceTree = "<group>"; };
+		4EDB2B1B23610DF500B2DF2D /* RealmAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAdapter.swift; sourceTree = "<group>"; };
+		4EDB2B1D23611E1900B2DF2D /* RealmWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWeather.swift; sourceTree = "<group>"; };
+		4EDB2B1F23611E2700B2DF2D /* RealmWeatherHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWeatherHistory.swift; sourceTree = "<group>"; };
+		6331A541C28AE439E0F76A46 /* Pods_Prometheus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prometheus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66FF373078289F4CBF9484C /* Pods-Prometheus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prometheus.release.xcconfig"; path = "Target Support Files/Pods-Prometheus/Pods-Prometheus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +127,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0036BDA33346BD70F22009 /* Pods_Prometheus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DD007A867841209239743AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6331A541C28AE439E0F76A46 /* Pods_Prometheus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4E05CDA923602B5D00D1172B /* AddLocationViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,11 +169,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4E986C9B23619AAC00641344 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4E986C8F236180F700641344 /* LocationPlainDetailsCell.swift */,
+				4E986C90236180F700641344 /* LocationPlainDetailsCell.xib */,
+				4ED402BB2361C5B10022EB04 /* LocationWindSpeedDetailsCell.swift */,
+				4ED402BC2361C5B10022EB04 /* LocationWindSpeedDetailsCell.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		4EB0D5C3235EE90200F5A4E2 = {
 			isa = PBXGroup;
 			children = (
 				4EB0D5CE235EE90300F5A4E2 /* Prometheus */,
 				4EB0D5CD235EE90300F5A4E2 /* Products */,
+				5987945A3785788D7A6A7BDA /* Pods */,
+				1DD007A867841209239743AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +207,7 @@
 				4EB0D5E9235EEF0900F5A4E2 /* Shared Models */,
 				4EB0D5EA235EEF1200F5A4E2 /* Shared Views */,
 				4EB0D5E3235EEDDF00F5A4E2 /* View Controllers */,
+				4EB0D5DA235EE90400F5A4E2 /* LaunchScreen.storyboard */,
 				4EB0D5E6235EEE4300F5A4E2 /* Vendors */,
 				4EB0D5E5235EEE2200F5A4E2 /* Resources */,
 				4EB0D5DD235EE90400F5A4E2 /* Info.plist */,
@@ -166,7 +221,6 @@
 				4E05CDB62360502E00D1172B /* PrometheusContainerViewController */,
 				4E05CDA923602B5D00D1172B /* AddLocationViewController */,
 				4EB0D5FF235F1B7500F5A4E2 /* LocationsFeedViewController */,
-				4EB0D5DA235EE90400F5A4E2 /* LaunchScreen.storyboard */,
 				4E05CDBF2360B8E400D1172B /* LoaderViewController.swift */,
 				4E05CDC12360C52400D1172B /* EmptyViewController.swift */,
 			);
@@ -209,8 +263,9 @@
 			isa = PBXGroup;
 			children = (
 				4EB0D5F3235F07A500F5A4E2 /* DependencyContainer.swift */,
-				4EB0D611235F3E4000F5A4E2 /* Networking */,
 				4E05CDBD2360958700D1172B /* LocationsStore.swift */,
+				4EB0D611235F3E4000F5A4E2 /* Networking */,
+				4EDB2B1823610A7700B2DF2D /* Database */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -233,6 +288,8 @@
 				4E05CD9F235F6EF600D1172B /* WindBearing.swift */,
 				4EB0D614235F45D800F5A4E2 /* Result.swift */,
 				4E05CD9D235F597900D1172B /* WeatherHistory.swift */,
+				4E986C9723619A7800641344 /* Language.swift */,
+				4E986C9923619A8D00641344 /* Units.swift */,
 			);
 			path = "Shared Models";
 			sourceTree = "<group>";
@@ -241,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				4E05CDB42360385100D1172B /* PTButton.swift */,
+				4E986C952361900000641344 /* GradientView.swift */,
 			);
 			path = "Shared Views";
 			sourceTree = "<group>";
@@ -262,6 +320,9 @@
 				4E05CDA7236026D200D1172B /* LocationOverviewCellModel.swift */,
 				4EB0D609235F1F5E00F5A4E2 /* LocationOverviewCell.swift */,
 				4EB0D60A235F1F5E00F5A4E2 /* LocationOverviewCell.xib */,
+				4E986C932361878B00641344 /* LocationDetailsCellModel.swift */,
+				4E986C8B23617C7400641344 /* LocationDetailsCell.swift */,
+				4E986C9B23619AAC00641344 /* Details */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -275,6 +336,35 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		4EDB2B1823610A7700B2DF2D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				4EDB2B16236109AE00B2DF2D /* Database.swift */,
+				4EDB2B232361221E00B2DF2D /* Realm */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		4EDB2B232361221E00B2DF2D /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				4EDB2B1B23610DF500B2DF2D /* RealmAdapter.swift */,
+				4EDB2B1923610AD300B2DF2D /* RealmLocation.swift */,
+				4EDB2B1D23611E1900B2DF2D /* RealmWeather.swift */,
+				4EDB2B1F23611E2700B2DF2D /* RealmWeatherHistory.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		5987945A3785788D7A6A7BDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10F47B775B179A6976B20D58 /* Pods-Prometheus.debug.xcconfig */,
+				F66FF373078289F4CBF9484C /* Pods-Prometheus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,9 +372,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EB0D5E0235EE90400F5A4E2 /* Build configuration list for PBXNativeTarget "Prometheus" */;
 			buildPhases = (
+				401C4E34D5A73F9ED77BC009 /* [CP] Check Pods Manifest.lock */,
 				4EB0D5C8235EE90200F5A4E2 /* Sources */,
 				4EB0D5C9235EE90200F5A4E2 /* Frameworks */,
 				4EB0D5CA235EE90200F5A4E2 /* Resources */,
+				119229E14912D1F8F65BD658 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,7 +425,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E986C92236180F700641344 /* LocationPlainDetailsCell.xib in Resources */,
 				4EB0D60C235F1F5E00F5A4E2 /* LocationOverviewCell.xib in Resources */,
+				4ED402BE2361C5B10022EB04 /* LocationWindSpeedDetailsCell.xib in Resources */,
 				4EB0D5DC235EE90400F5A4E2 /* LaunchScreen.storyboard in Resources */,
 				4EB0D5D9235EE90400F5A4E2 /* Assets.xcassets in Resources */,
 			);
@@ -341,35 +435,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		119229E14912D1F8F65BD658 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prometheus/Pods-Prometheus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prometheus/Pods-Prometheus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prometheus/Pods-Prometheus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		401C4E34D5A73F9ED77BC009 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prometheus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4EB0D5C8235EE90200F5A4E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4E05CDBC2360832D00D1172B /* AddLocationTitleView.swift in Sources */,
+				4E986C9A23619A8D00641344 /* Units.swift in Sources */,
 				4E05CDAB23602B7100D1172B /* AddLocationViewController.swift in Sources */,
 				4EB0D5F6235F0A0600F5A4E2 /* FeedCoordinator.swift in Sources */,
 				4E05CDB3236031BD00D1172B /* Utils.swift in Sources */,
 				4E05CDC42360CB7600D1172B /* PrometheusContainerViewController.swift in Sources */,
 				4E05CD9E235F597900D1172B /* WeatherHistory.swift in Sources */,
+				4E986C962361900000641344 /* GradientView.swift in Sources */,
+				4EDB2B17236109AE00B2DF2D /* Database.swift in Sources */,
+				4EDB2B2023611E2700B2DF2D /* RealmWeatherHistory.swift in Sources */,
 				4E05CDAD23602F1B00D1172B /* UINavigationBar+Color.swift in Sources */,
+				4EDB2B1A23610AD300B2DF2D /* RealmLocation.swift in Sources */,
+				4EDB2B1C23610DF500B2DF2D /* RealmAdapter.swift in Sources */,
 				4EB0D5F4235F07A500F5A4E2 /* DependencyContainer.swift in Sources */,
 				4EB0D5FC235F11B100F5A4E2 /* Location.swift in Sources */,
+				4EDB2B1E23611E1900B2DF2D /* RealmWeather.swift in Sources */,
 				4EB0D5F0235F061D00F5A4E2 /* UIViewController+Child.swift in Sources */,
 				4EB0D5EE235EEF7400F5A4E2 /* AppCoordinator.swift in Sources */,
 				4EB0D5D4235EE90300F5A4E2 /* LocationsFeedViewController.swift in Sources */,
 				4E05CDC02360B8E400D1172B /* LoaderViewController.swift in Sources */,
 				4E05CDA6236022F000D1172B /* String+Attributes.swift in Sources */,
 				4EB0D615235F45D800F5A4E2 /* Result.swift in Sources */,
+				4E986C9823619A7800641344 /* Language.swift in Sources */,
+				4E986C91236180F700641344 /* LocationPlainDetailsCell.swift in Sources */,
 				4E05CDA0235F6EF600D1172B /* WindBearing.swift in Sources */,
 				4E05CDC22360C52400D1172B /* EmptyViewController.swift in Sources */,
 				4E05CDB52360385100D1172B /* PTButton.swift in Sources */,
 				4EB0D60E235F207700F5A4E2 /* UICollectionView+Empty.swift in Sources */,
 				4E05CD9C235F55F900D1172B /* Weather.swift in Sources */,
+				4ED402BD2361C5B10022EB04 /* LocationWindSpeedDetailsCell.swift in Sources */,
 				4E05CDBE2360958700D1172B /* LocationsStore.swift in Sources */,
 				4EB0D5D0235EE90300F5A4E2 /* AppDelegate.swift in Sources */,
 				4E05CDB123602FF400D1172B /* UIColor+RGB.swift in Sources */,
 				4EB0D5FE235F138C00F5A4E2 /* LocationsFeedContentViewController.swift in Sources */,
+				4E986C8D23617C7400641344 /* LocationDetailsCell.swift in Sources */,
 				4EB0D60B235F1F5E00F5A4E2 /* LocationOverviewCell.swift in Sources */,
 				4EB0D610235F2C7F00F5A4E2 /* LocationsFeedContentViewController+DataTypes.swift in Sources */,
 				4EB0D5F2235F065100F5A4E2 /* NetworkService.swift in Sources */,
@@ -378,6 +525,7 @@
 				4E05CDA2236020AE00D1172B /* String+Sizing.swift in Sources */,
 				4E05CDC72360D6D100D1172B /* AddLocationToolbar.swift in Sources */,
 				4E05CDA42360228600D1172B /* NSObject+ClassName.swift in Sources */,
+				4E986C942361878B00641344 /* LocationDetailsCellModel.swift in Sources */,
 				4EB0D613235F3E4E00F5A4E2 /* Api.swift in Sources */,
 				4E05CDBA236052CD00D1172B /* MapViewController.swift in Sources */,
 				4EB0D5EC235EEF4000F5A4E2 /* Coordinator.swift in Sources */,
@@ -514,6 +662,7 @@
 		};
 		4EB0D5E1235EE90400F5A4E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F47B775B179A6976B20D58 /* Pods-Prometheus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -533,6 +682,7 @@
 		};
 		4EB0D5E2235EE90400F5A4E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66FF373078289F4CBF9484C /* Pods-Prometheus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

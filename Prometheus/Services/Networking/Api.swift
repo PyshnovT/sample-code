@@ -60,7 +60,10 @@ struct Api {
             case .success(let data):
                 
                 do {
-                    let location = try JSONDecoder().decode(Location.self, from: data)
+                    var location = try JSONDecoder().decode(Location.self, from: data)
+                    if let rawValue = units, let units = Units(rawValue: rawValue) {
+                        location.currentWeather.setUnits(units)
+                    }
                     completion(.success(location))
                 } catch {
                     completion(.error(error))

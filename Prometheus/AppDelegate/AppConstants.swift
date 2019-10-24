@@ -22,6 +22,11 @@ extension AppConstants {
         
         static let lightBlueColor = UIColor.hex("#17C9FE")
         static let highlightedBlueColor = UIColor.hex("#07B9EE")
+        
+        static let orangeColor = UIColor.hex("FDC035")
+        static let darkerOrangeColor = UIColor.hex("FA8A29")
+        static let blueColor = UIColor.hex("35CAF8")
+        static let darkerBlueColor = UIColor.hex("289FF4")
     }
     
     enum Images {

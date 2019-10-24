@@ -1,0 +1,6 @@
+framework module Pods_Prometheus {
+  umbrella header "Pods-Prometheus-umbrella.h"
+
+  export *
+  module * { export * }
+}

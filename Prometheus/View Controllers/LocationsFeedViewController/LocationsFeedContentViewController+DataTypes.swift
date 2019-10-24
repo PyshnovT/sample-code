@@ -31,9 +31,9 @@ extension LocationsFeedContentViewController.Section {
     
     init(with location: Location) {
         let overview = FeedItem.overview(location)
-        let table = FeedItem.overview(location)
+        let details = FeedItem.details(location)
         
-        self.items = [overview, table]
+        self.items = [overview, details]
     }
     
 }

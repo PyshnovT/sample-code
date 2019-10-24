@@ -36,12 +36,13 @@ class LocationsFeedContentViewController: UIViewController {
     
     lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView.empty()
-        collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.backgroundColor = .clear
         collectionView.alwaysBounceVertical = true
         
         collectionView.register(LocationOverviewCell.nib, forCellWithReuseIdentifier: LocationOverviewCell.reuseIdentifier)
+        collectionView.register(LocationDetailsCell.self, forCellWithReuseIdentifier: LocationDetailsCell.reuseIdentifier)
         
         return collectionView
     }()
@@ -53,6 +54,8 @@ class LocationsFeedContentViewController: UIViewController {
         
         view.addSubview(collectionView)
     }
+    
+    // MARK: - Layout
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -85,8 +88,10 @@ extension LocationsFeedContentViewController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LocationOverviewCell.reuseIdentifier, for: indexPath) as! LocationOverviewCell
             cell.model = LocationOverviewCellModel(with: location)
             return cell
-        default:
-            return UICollectionViewCell()
+        case .details(let location):
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LocationDetailsCell.reuseIdentifier, for: indexPath) as! LocationDetailsCell
+            cell.model = LocationDetailsCellModel(with: location)
+            return cell
         }
     }
 }
@@ -103,15 +108,12 @@ extension LocationsFeedContentViewController: UICollectionViewDelegateFlowLayout
         case .overview(let location):
             let height = LocationOverviewCell.height(for: LocationOverviewCellModel(with: location), maximumWidth: width)
             return CGSize(width: width, height: height)
-        default:
-            return .zero
+            
+        case .details(let location):
+            let height = LocationDetailsCell.height(for: LocationDetailsCellModel(with: location), maximumWidth: width)
+            return CGSize(width: width, height: height)
+            
         }
     }
-    
-}
-
-// MARK: - UICollectionViewDelegate
-
-extension LocationsFeedContentViewController: UICollectionViewDelegate {
     
 }

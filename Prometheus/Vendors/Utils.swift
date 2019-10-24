@@ -194,3 +194,7 @@ extension CGRect {
     }
 
 }
+
+func degreesToRadians(_ number: Double) -> Double {
+    return number * .pi / 180
+}

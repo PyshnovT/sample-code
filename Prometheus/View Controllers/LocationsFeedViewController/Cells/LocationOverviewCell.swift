@@ -76,10 +76,10 @@ extension LocationOverviewCell {
     enum Constants {
         static let titleFont = UIFont.systemFont(ofSize: 17)
         static let coordinateFont = UIFont.systemFont(ofSize: 15)
-        static let currentWeatherFont = UIFont.italicSystemFont(ofSize: 12)
-        static let summaryWeatherFont = UIFont.italicSystemFont(ofSize: 12)
+        static let currentWeatherFont = UIFont.italicSystemFont(ofSize: 13)
+        static let summaryWeatherFont = UIFont.italicSystemFont(ofSize: 13)
         
-        static let insets = UIEdgeInsets(top: 20, left: 16, bottom: 20, right: 16)
+        static let insets = UIEdgeInsets(top: 20, left: 16, bottom: 10, right: 16)
         static let temperatureViewSize = CGSize(width: 60, height: 60)
         
         static let titleToCoordinateY: CGFloat = 0

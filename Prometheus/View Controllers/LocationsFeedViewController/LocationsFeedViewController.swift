@@ -57,6 +57,13 @@ class LocationsFeedViewController: UIViewController {
         view.addSubview(containerView)
         view.addSubview(addLocationButton)
         
+        locationsStore.fetchAllLocations()
+        
+        locationsStore.refreshAllLocations { [weak self] (_, _) in
+            guard let self = self else { return }
+            self.state = .locations(self.locationsStore.locations)
+        }
+        
         state = .empty
     }
     

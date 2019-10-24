@@ -22,7 +22,7 @@ extension LocationOverviewCellModel {
         title = location.timezone
         coordinate = location.coordinateString
         currentWeather = location.currentWeather.summary
-        summaryWeather = location.minutelyWeatherHistory?.summary
+        summaryWeather = location.suggestedWeatherHistory?.summary
         temperature = location.currentWeather.temperatureString
     }
     

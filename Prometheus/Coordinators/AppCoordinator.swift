@@ -20,8 +20,13 @@ final class AppCoordinator: Coordinator {
         
         let networkService = NetworkService()
         let api = Api(networkService: networkService)
-        let locationsStore = LocationsStore(api: api)
-        self.dependencyContainer = DependencyContainer(api: api, locationsStore: locationsStore)
+        let realmAdapter = RealmAdapter()
+        let locationsStore = LocationsStore(api: api, database: realmAdapter)
+        
+        let locale = Locale.current.regionCode
+        print(locale)
+        
+        self.dependencyContainer = DependencyContainer(api: api, locationsStore: locationsStore, realmAdapter: realmAdapter)
         
         super.init()
     }

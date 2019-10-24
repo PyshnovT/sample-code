@@ -12,10 +12,19 @@ import CoreLocation
 struct Location {
     let coordinate: CLLocationCoordinate2D
     let timezone: String
-    let currentWeather: Weather
+    var currentWeather: Weather
     let minutelyWeatherHistory: WeatherHistory?
     let hourlyWeatherHistory: WeatherHistory?
     let dailyWeatherHistory: WeatherHistory?
+}
+
+extension Location: Equatable {
+    
+    static func ==(lhs: Location, rhs: Location) -> Bool {
+        return  lhs.coordinate.latitude == rhs.coordinate.latitude &&
+                lhs.coordinate.longitude == rhs.coordinate.longitude
+    }
+    
 }
 
 extension Location: Decodable {
@@ -49,5 +58,17 @@ extension Location: Decodable {
 extension Location {
     var coordinateString: String {
         return "\(coordinate.latitude),\(coordinate.longitude)"
+    }
+    
+    var suggestedWeatherHistory: WeatherHistory? {
+        if let minutelyWeatherHistory = minutelyWeatherHistory {
+            return minutelyWeatherHistory
+        } else if let hourlyWeatherHistory = hourlyWeatherHistory {
+            return hourlyWeatherHistory
+        } else if let dailyWeatherHistory = dailyWeatherHistory {
+            return dailyWeatherHistory
+        }
+        
+        return nil
     }
 }

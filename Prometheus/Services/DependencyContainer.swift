@@ -7,13 +7,16 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct DependencyContainer {
     let api: Api
     let locationsStore: LocationsStore
+    let realmAdapter: RealmAdapter?
     
-    init(api: Api, locationsStore: LocationsStore) {
+    init(api: Api, locationsStore: LocationsStore, realmAdapter: RealmAdapter?) {
         self.api = api
         self.locationsStore = locationsStore
+        self.realmAdapter = realmAdapter
     }
 }

@@ -15,6 +15,11 @@ struct Weather {
     let humidity: CGFloat?
     let windSpeed: CGFloat?
     let windBearing: WindBearing?
+    var units: Units?
+    
+    mutating func setUnits(_ units: Units) {
+        self.units = units
+    }
 }
 
 extension Weather: Decodable {
@@ -53,7 +58,8 @@ extension Weather {
     
     var temperatureString: String? {
         if let temp = temperature {
-            return String(describing: temp)
+            let rounded = round(temp * 10) / 10
+            return String(describing: rounded) + (units?.temperatureSign ?? "")
         }
             
         return nil
