@@ -9,6 +9,7 @@
 import UIKit
 
 extension CGRect {
+    
     init(size: CGSize) {
         self.init(origin: CGPoint.zero, size: size)
     }
@@ -218,6 +219,16 @@ extension CGRect {
         rect.size.height = rect.size.height + padding + padding
         rect.size.width = rect.size.width + padding + padding
         return rect
+    }
+    
+}
+
+extension UIButton {
+
+    func updateTitleEdgeInsets(bottomSafeArea: CGFloat) {
+        var copy = titleEdgeInsets
+        copy.top = -bottomSafeArea
+        self.titleEdgeInsets = copy
     }
     
 }

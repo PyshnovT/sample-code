@@ -12,9 +12,6 @@ class LocationWindSpeedDetailsCell: UITableViewCell {
 
     typealias WindSpeedDetails = LocationDetailsCellModel.WindSpeedDetails
     
-    static let nib = UINib(nibName: "LocationWindSpeedDetailsCell", bundle: nil)
-    static let reuseIdentifier = "LocationWindSpeedDetailsCell"
-    
     var model: WindSpeedDetails? {
         didSet {
             if let model = model {
@@ -48,10 +45,21 @@ class LocationWindSpeedDetailsCell: UITableViewCell {
     
 }
 
+// MARK: - Layout
+
 extension LocationWindSpeedDetailsCell {
     
     static func height(for model: WindSpeedDetails, maximumWidth: CGFloat) -> CGFloat {
         return 50
     }
+    
+}
+
+// MARK: - Constants
+
+extension LocationWindSpeedDetailsCell {
+    
+    static let nib = UINib(nibName: LocationWindSpeedDetailsCell.className, bundle: nil)
+    static let reuseIdentifier = LocationWindSpeedDetailsCell.className
     
 }

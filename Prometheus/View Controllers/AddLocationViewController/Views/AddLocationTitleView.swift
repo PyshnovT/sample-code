@@ -77,7 +77,6 @@ class AddLocationTitleView: UIView {
         
         switch model.state {
         case .location(let location):
-            
             let titleSize = location.title.size(for: CGFloat.greatestFiniteMagnitude, font: Constants.titleFont)
             let coordinateSize = location.coordinate.size(for: CGFloat.greatestFiniteMagnitude, font: Constants.titleFont)
             
@@ -99,6 +98,7 @@ class AddLocationTitleView: UIView {
             coordinateLabel.isHidden = false
             
             loader.stopAnimating()
+            
         case .loading:
             titleLabel.isHidden = true
             coordinateLabel.isHidden = true
@@ -144,7 +144,10 @@ extension AddLocationTitleViewModel {
     
     init(with location: Location) {
         self.state = .location(
-            AddLocationTitleViewModel.TitleViewLocation(title: location.timezone, coordinate: location.coordinateString)
+            AddLocationTitleViewModel.TitleViewLocation(
+                title: location.timezone,
+                coordinate: location.coordinateString
+            )
         )
     }
     

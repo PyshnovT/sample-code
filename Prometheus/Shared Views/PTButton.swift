@@ -11,7 +11,6 @@ import UIKit
 class PTButton: UIButton {
     
     var highlightedColor: UIColor = AppConstants.Colors.highlightedBlueColor
-    
     private var defaultBackgroundColor: UIColor? = AppConstants.Colors.lightBlueColor
     
     // MARK: - Init
@@ -67,6 +66,8 @@ class PTButton: UIButton {
         layer.shadowRadius = 20
     }
     
+    // MARK: - Layout
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -84,16 +85,6 @@ class PTButton: UIButton {
     func stopAnimating() {
         titleLabel?.alpha = 1
         loader.stopAnimating()
-    }
-    
-}
-
-extension UIButton {
-    
-    func updateTitleEdgeInsets(bottomSafeArea: CGFloat) {
-        var copy = titleEdgeInsets
-        copy.top = -bottomSafeArea
-        self.titleEdgeInsets = copy
     }
     
 }

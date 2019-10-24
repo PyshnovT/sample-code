@@ -12,8 +12,8 @@ class LocationPlainDetailsCell: UITableViewCell {
 
     typealias PlainDetails = LocationDetailsCellModel.PlainDetails
     
-    static let nib = UINib(nibName: "LocationPlainDetailsCell", bundle: nil)
-    static let reuseIdentifier = "LocationPlainDetailsCell"
+    static let nib = UINib(nibName: LocationPlainDetailsCell.className, bundle: nil)
+    static let reuseIdentifier = LocationPlainDetailsCell.className
     
     var model: PlainDetails? {
         didSet {

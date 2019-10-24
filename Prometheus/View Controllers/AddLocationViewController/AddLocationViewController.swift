@@ -67,7 +67,7 @@ class AddLocationViewController: UIViewController {
     
     lazy var confirmLocationButton: PTButton = {
         let button = PTButton()
-        button.setTitle("Confirm location", for: .normal)
+        button.setTitle(AppConstants.Strings.confirmLocation, for: .normal)
         button.setup()
         button.addTarget(self, action: #selector(confirmLocationTap(sender:)), for: .touchUpInside)
         return button
@@ -84,7 +84,6 @@ class AddLocationViewController: UIViewController {
         setupMapView()
         
         view.addSubview(overlayView)
-        
         view.addSubview(toolbar)
         view.addSubview(pinImageView)
         view.addSubview(pinShadowImageView)
@@ -96,7 +95,7 @@ class AddLocationViewController: UIViewController {
     // MARK: - Setup
     
     private func setupMapView() {
-        mapViewController.mapView.setRegion(defaultRegion), animated: false)
+        mapViewController.mapView.setRegion(defaultRegion, animated: false)
         mapViewController.mapView.addGestureRecognizer(panGestureRecognizer)
         panGestureRecognizer.delegate = self
     }
@@ -158,13 +157,15 @@ class AddLocationViewController: UIViewController {
         case .loading:
             hideOverlayViewIfNeeded()
             confirmLocationButton.stopAnimating()
-            
             toolbar.locationView.model = AddLocationTitleViewModel(state: .loading)
             toolbar.setNeedsLayout()
+            
         case .location(let location):
             updateLocation(location)
+            
         case .mapLoading:
             confirmLocationButton.startAnimating()
+            
         }
     }
     
@@ -172,15 +173,17 @@ class AddLocationViewController: UIViewController {
         if overlayView.alpha > 0 {
             UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut], animations: {
                 self.overlayView.alpha = 0
-            }) { (finished) in
-                
-            }
+            })
         }
     }
     
     // MARK: - Content
     
-    private var defaultRegion = MKCoordinateRegion(center: Constants.londonCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01) // London
+    // London
+    private var defaultRegion = MKCoordinateRegion(
+        center: Constants.londonCoordinate,
+        span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+    )
     
     private var lastCoordinate: CLLocationCoordinate2D?
     
@@ -190,7 +193,6 @@ class AddLocationViewController: UIViewController {
     }
     
     private func fetchLocation(for coordinate: CLLocationCoordinate2D) {
-        
         state = .loading
         
         locationsStore.fetchLocation(coordinate: coordinate) { [weak self] (result) in
@@ -214,7 +216,6 @@ extension AddLocationViewController {
         
         switch gr.state {
         case .began:
-            
             UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut], animations: {
                 self.pinImageViewOffset = -10
             })
@@ -222,7 +223,6 @@ extension AddLocationViewController {
         case .failed: fallthrough
         case .cancelled: fallthrough
         case .ended:
-            
             UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut], animations: {
                 self.pinImageViewOffset = 0
             })
@@ -237,8 +237,10 @@ extension AddLocationViewController {
         case .location(let location):
             locationsStore.insertLocation(location)
             delegate?.addLocationViewControllerDidConfirmLocation(addLocationViewController: self)
+            
         case .loading:
             break
+            
         case .mapLoading:
             break
         }
@@ -255,17 +257,15 @@ extension AddLocationViewController {
 extension AddLocationViewController: MapViewControllerDelegate {
     
     func mapViewController(mapViewController: MapViewController, didChangeCoordinate coordinate: CLLocationCoordinate2D) {
-        print(coordinate)
-        
         lastCoordinate = coordinate
         
         switch state {
         case .mapLoading:
             break
+            
         default:
             fetchLocation(for: coordinate)
         }
-        
     }
     
     func mapViewController(mapViewController: MapViewController, didFinishLoadingMap mapView: MKMapView) {
@@ -274,6 +274,7 @@ extension AddLocationViewController: MapViewControllerDelegate {
             if let lastCoordinate = lastCoordinate {
                 fetchLocation(for: lastCoordinate)
             }
+            
         default:
             break
         }

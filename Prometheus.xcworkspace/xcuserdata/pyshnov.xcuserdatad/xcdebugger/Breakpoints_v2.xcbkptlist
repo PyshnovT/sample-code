@@ -3,4 +3,54 @@
    uuid = "B52C9BDB-94B1-4387-8083-2EB7DF65E297"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E317EDE9-FAF2-43BA-B0FE-ED6D0E4C8E0C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prometheus/Services/Networking/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "load(url:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E317EDE9-FAF2-43BA-B0FE-ED6D0E4C8E0C - 4c7991efce434922"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prometheus.NetworkService.load(url: Foundation.URL, completion: (Prometheus.Result&lt;Foundation.Data&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Prometheus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pyshnov/Dropbox/Code/Prometheus/Prometheus/Services/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  uuid = "E317EDE9-FAF2-43BA-B0FE-ED6D0E4C8E0C - 64aacde556bc0c4e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prometheus.NetworkService.load(url: Foundation.URL, completion: (Prometheus.Result&lt;Foundation.Data&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Prometheus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pyshnov/Dropbox/Code/Prometheus/Prometheus/Services/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "278">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

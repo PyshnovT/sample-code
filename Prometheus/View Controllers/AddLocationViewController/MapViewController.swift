@@ -41,20 +41,14 @@ class MapViewController: UIViewController {
 }
 
 extension MapViewController: MKMapViewDelegate {
-    
-    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-        print(mapView.region)
-    }
-    
+
     func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
         delegate?.mapViewController(mapViewController: self, didFinishLoadingMap: mapView)
-        print("finish loading map")
     }
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let coordinate = mapView.centerCoordinate
         delegate?.mapViewController(mapViewController: self, didChangeCoordinate: coordinate)
-        print("regionDidChangeAnimated")
     }
     
 }

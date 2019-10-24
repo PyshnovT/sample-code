@@ -32,8 +32,6 @@ struct Api {
     // MARK: - Routes
     
     func fetchLocation(latitude: String, longitude: String, lang: String?, units: String?, completion: @escaping ApiWeatherCompletion) {
-        // https://prometheus-api.draewil.net/c6987ba1fcc7450aea9cff041bb42825/51.500334,-0.085013?lang=fr&units=si
-        
         var components = URLComponents()
         components.scheme = "https"
         components.host = "prometheus-api.draewil.net"
@@ -61,9 +59,11 @@ struct Api {
                 
                 do {
                     var location = try JSONDecoder().decode(Location.self, from: data)
+                    
                     if let rawValue = units, let units = Units(rawValue: rawValue) {
                         location.currentWeather.setUnits(units)
                     }
+                    
                     completion(.success(location))
                 } catch {
                     completion(.error(error))

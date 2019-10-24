@@ -18,6 +18,8 @@ class LocationOverviewCell: UICollectionViewCell {
         }
     }
     
+    // MARK: - Views
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var coordinateLabel: UILabel!
     @IBOutlet weak var currentWeatherLabel: UILabel!
@@ -88,7 +90,7 @@ extension LocationOverviewCell {
         static let viewToTemperatureViewX: CGFloat = 20
     }
     
-    static let nib: UINib = UINib(nibName: "LocationOverviewCell", bundle: nil)
-    static let reuseIdentifier = "LocationOverviewCell"
+    static let nib: UINib = UINib(nibName: LocationOverviewCell.className, bundle: nil)
+    static let reuseIdentifier = LocationOverviewCell.className
     
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class LocationDetailsCell: UICollectionViewCell {
 
-    static let reuseIdentifier = "LocationDetailsCell"
+    static let reuseIdentifier = LocationDetailsCell.className
     
     var model: LocationDetailsCellModel? {
         didSet {
@@ -140,6 +140,7 @@ extension LocationDetailsCell: UITableViewDelegate {
         switch item {
         case .plain(let plain):
             return LocationPlainDetailsCell.height(for: plain, maximumWidth: maximumWidth)
+            
         case .windSpeed(let windSpeed):
             return LocationWindSpeedDetailsCell.height(for: windSpeed, maximumWidth: maximumWidth)
         }

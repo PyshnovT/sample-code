@@ -53,9 +53,8 @@ class AddLocationToolbar: UIView {
     lazy var backButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(AppConstants.Images.chevronLeft, for: .normal)
-        button.setTitle("Back", for: .normal)
+        button.setTitle(AppConstants.Strings.back, for: .normal)
         button.titleLabel?.font = Constants.buttonFont
-//        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
         return button
     }()
     

@@ -14,6 +14,12 @@ extension AppConstants {
     
     enum Strings {
         static let appName = "Prometheus"
+        static let confirmLocation = "Confirm location"
+        static let back = "Back"
+        static let addNewLocation = "Add new location"
+        static let addLocations = "Add locations"
+        static let humidity = "Humidity"
+        static let windSpeed = "Wind Speed"
     }
     
     enum Colors {

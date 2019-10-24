@@ -41,7 +41,7 @@ class LocationsFeedViewController: UIViewController {
     
     lazy var addLocationButton: PTButton = {
         let button = PTButton()
-        button.setTitle("Add new location", for: .normal)
+        button.setTitle(AppConstants.Strings.addNewLocation, for: .normal)
         button.setup()
         button.addTarget(self, action: #selector(addLocationTap(sender:)), for: .touchUpInside)
         return button

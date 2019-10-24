@@ -77,7 +77,8 @@ final class PrometheusContainerViewController: UIViewController {
             x: 0,
             y: navigationBarHeight,
             width: view.bounds.width,
-            height: view.bounds.height - navigationBarHeight)
+            height: view.bounds.height - navigationBarHeight
+        )
         
         rootViewController?.view.frame = containerView.bounds
     }

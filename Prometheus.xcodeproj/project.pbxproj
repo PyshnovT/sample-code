@@ -152,14 +152,6 @@
 			path = AddLocationViewController;
 			sourceTree = "<group>";
 		};
-		4E05CDB62360502E00D1172B /* PrometheusContainerViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4E05CDC32360CB7600D1172B /* PrometheusContainerViewController.swift */,
-			);
-			path = PrometheusContainerViewController;
-			sourceTree = "<group>";
-		};
 		4E05CDC52360D6BF00D1172B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,9 +210,9 @@
 		4EB0D5E3235EEDDF00F5A4E2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4E05CDB62360502E00D1172B /* PrometheusContainerViewController */,
 				4E05CDA923602B5D00D1172B /* AddLocationViewController */,
 				4EB0D5FF235F1B7500F5A4E2 /* LocationsFeedViewController */,
+				4E05CDC32360CB7600D1172B /* PrometheusContainerViewController.swift */,
 				4E05CDBF2360B8E400D1172B /* LoaderViewController.swift */,
 				4E05CDC12360C52400D1172B /* EmptyViewController.swift */,
 			);

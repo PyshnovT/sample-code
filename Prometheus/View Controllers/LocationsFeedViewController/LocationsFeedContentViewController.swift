@@ -8,10 +8,6 @@
 
 import UIKit
 
-//protocol LocationsFeedContentViewControllerDelegate: class {
-//    func locationsFeedContentViewControllerDidTapAddLocation(_ locationsFeedContentViewController: LocationsFeedContentViewController)
-//}
-
 //
 // Reusable list
 //
@@ -72,6 +68,7 @@ class LocationsFeedContentViewController: UIViewController {
 // https://www.swiftbysundell.com/articles/reusable-data-sources-in-swift/
 //
 extension LocationsFeedContentViewController: UICollectionViewDataSource {
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return sections.count
     }
@@ -88,12 +85,15 @@ extension LocationsFeedContentViewController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LocationOverviewCell.reuseIdentifier, for: indexPath) as! LocationOverviewCell
             cell.model = LocationOverviewCellModel(with: location)
             return cell
+            
         case .details(let location):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LocationDetailsCell.reuseIdentifier, for: indexPath) as! LocationDetailsCell
             cell.model = LocationDetailsCellModel(with: location)
             return cell
+            
         }
     }
+    
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout

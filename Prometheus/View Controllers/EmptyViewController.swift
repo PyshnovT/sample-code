@@ -20,7 +20,7 @@ class EmptyViewController: UIViewController {
     
     lazy var label: UILabel = {
         let label = UILabel()
-        label.text = "Add locations"
+        label.text = AppConstants.Strings.addLocations
         label.font = Constants.labelFont
         label.textColor = Constants.contentColor
         return label
