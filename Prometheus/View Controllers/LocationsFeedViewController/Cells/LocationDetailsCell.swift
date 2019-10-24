@@ -27,6 +27,7 @@ class LocationDetailsCell: UICollectionViewCell {
         super.init(frame: frame)
         
         addSubview(tableView)
+        addSubview(separatorView)
     }
     
     required init?(coder: NSCoder) {
@@ -49,12 +50,22 @@ class LocationDetailsCell: UICollectionViewCell {
         return tableView
     }()
     
+    lazy var separatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.rgba(red: 0, green: 0, blue: 0, alpha: 0.3)
+        return view
+    }()
+    
     // MARK: - Layout
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        tableView.frame = bounds
+        let insets = Constants.insets
+        tableView.frame = bounds.appliedInsets(insets: insets)
+        
+        let separatorHeight = Constants.separatorHeight / UIScreen.main.scale
+        separatorView.frame = CGRect(x: 0, y: bounds.height - separatorHeight, width: bounds.width, height: separatorHeight)
     }
     
     // MARK: - Update
@@ -70,7 +81,8 @@ class LocationDetailsCell: UICollectionViewCell {
 extension LocationDetailsCell {
     
     static func height(for model: LocationDetailsCellModel, maximumWidth: CGFloat) -> CGFloat {
-        var height: CGFloat = 0
+        let insets = Constants.insets
+        var height: CGFloat = Constants.separatorHeight
         
         for item in model.items {
             switch item {
@@ -83,7 +95,7 @@ extension LocationDetailsCell {
             }
         }
         
-        return height
+        return height + insets.top + insets.bottom
     }
     
 }
@@ -103,6 +115,7 @@ extension LocationDetailsCell: UITableViewDataSource {
         case .plain(let plain):
             let cell = tableView.dequeueReusableCell(withIdentifier: LocationPlainDetailsCell.reuseIdentifier, for: indexPath) as! LocationPlainDetailsCell
             cell.model = plain
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: tableView.bounds.width)
             return cell
             
         case .windSpeed(let windSpeed):
@@ -131,6 +144,15 @@ extension LocationDetailsCell: UITableViewDelegate {
             return LocationWindSpeedDetailsCell.height(for: windSpeed, maximumWidth: maximumWidth)
         }
         
+    }
+    
+}
+
+extension LocationDetailsCell {
+    
+    enum Constants {
+        static let separatorHeight: CGFloat = 1
+        static let insets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
     }
     
 }

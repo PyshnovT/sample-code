@@ -39,15 +39,6 @@ extension LocationDetailsCellModel {
     init(with location: Location) {
         var items: [DetailItem] = []
         
-        if let humidity = location.currentWeather.humidity {
-            let humidityDetails = PlainDetails(
-                gradientColors: [AppConstants.Colors.blueColor, AppConstants.Colors.darkerBlueColor],
-                title: "Humidity",
-                subtitle: "\(humidity)")
-            
-            items.append(.plain(humidityDetails))
-        }
-        
         if let windSpeed = location.currentWeather.windSpeed {
             let windSpeedDetails = WindSpeedDetails(
                 gradientColors: [AppConstants.Colors.orangeColor, AppConstants.Colors.darkerOrangeColor],
@@ -56,6 +47,15 @@ extension LocationDetailsCellModel {
                 windBearing: location.currentWeather.windBearing)
             
             items.append(.windSpeed(windSpeedDetails))
+        }
+        
+        if let humidity = location.currentWeather.humidity {
+            let humidityDetails = PlainDetails(
+                gradientColors: [AppConstants.Colors.blueColor, AppConstants.Colors.darkerBlueColor],
+                title: "Humidity",
+                subtitle: "\(humidity)")
+            
+            items.append(.plain(humidityDetails))
         }
         
         self.items = items

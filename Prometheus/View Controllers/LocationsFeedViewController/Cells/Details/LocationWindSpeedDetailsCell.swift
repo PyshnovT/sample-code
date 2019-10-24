@@ -51,7 +51,7 @@ class LocationWindSpeedDetailsCell: UITableViewCell {
 extension LocationWindSpeedDetailsCell {
     
     static func height(for model: WindSpeedDetails, maximumWidth: CGFloat) -> CGFloat {
-        return 44
+        return 50
     }
     
 }

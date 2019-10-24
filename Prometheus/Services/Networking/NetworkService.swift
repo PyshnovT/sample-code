@@ -30,13 +30,7 @@ class NetworkService {
     func load(url: URL, completion: @escaping NetworkServiceCompletion) {
         let task = URLSession.shared.dataTask(with: url) {
             data, response, error in
-//
-            
-//            print(String(data: data!, encoding: .utf8))
-//            print(data)
-//            print(response)
-//            print(error)
-            
+
             DispatchQueue.main.async {
                 if let error = error {
                     completion(.error(error))

@@ -23,9 +23,6 @@ final class AppCoordinator: Coordinator {
         let realmAdapter = RealmAdapter()
         let locationsStore = LocationsStore(api: api, database: realmAdapter)
         
-        let locale = Locale.current.regionCode
-        print(locale)
-        
         self.dependencyContainer = DependencyContainer(api: api, locationsStore: locationsStore, realmAdapter: realmAdapter)
         
         super.init()

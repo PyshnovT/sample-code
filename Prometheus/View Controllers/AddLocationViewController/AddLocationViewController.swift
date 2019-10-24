@@ -93,17 +93,10 @@ class AddLocationViewController: UIViewController {
         state = .mapLoading
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        print("willAppear")
-    }
-    
     // MARK: - Setup
     
     private func setupMapView() {
-        mapViewController.mapView.setRegion(MKCoordinateRegion(center: Constants.londonCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)), animated: false)
-        print("set region")
+        mapViewController.mapView.setRegion(defaultRegion), animated: false)
         mapViewController.mapView.addGestureRecognizer(panGestureRecognizer)
         panGestureRecognizer.delegate = self
     }
@@ -118,8 +111,6 @@ class AddLocationViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        toolbar.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: Constants.toolbarHeight)
         
         let buttonHeight = Constants.buttonHeight + view.safeAreaInsets.bottom
         confirmLocationButton.frame = CGRect(x: 0, y: view.bounds.height - buttonHeight, width: view.bounds.width, height: buttonHeight)
@@ -188,6 +179,8 @@ class AddLocationViewController: UIViewController {
     }
     
     // MARK: - Content
+    
+    private var defaultRegion = MKCoordinateRegion(center: Constants.londonCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01) // London
     
     private var lastCoordinate: CLLocationCoordinate2D?
     

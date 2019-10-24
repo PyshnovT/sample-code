@@ -18,7 +18,6 @@ class LocationsFeedViewController: UIViewController {
     typealias Section = LocationsFeedContentViewController.Section
     
     weak var delegate: LocationsFeedViewControllerDelegate?
-    
     let locationsStore: LocationsStore
     
     // MARK: - Init
@@ -58,7 +57,6 @@ class LocationsFeedViewController: UIViewController {
         view.addSubview(addLocationButton)
         
         locationsStore.fetchAllLocations()
-        
         locationsStore.refreshAllLocations { [weak self] (_, _) in
             guard let self = self else { return }
             self.state = .locations(self.locationsStore.locations)
@@ -79,28 +77,17 @@ class LocationsFeedViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         let buttonHeigth = Constants.buttonHeight + view.safeAreaInsets.bottom
-        addLocationButton.frame = CGRect(x: 0, y: view.bounds.height - buttonHeigth, width: view.bounds.width, height: buttonHeigth)
+        
+        addLocationButton.frame = CGRect(
+            x: 0,
+            y: view.bounds.height - buttonHeigth,
+            width: view.bounds.width,
+            height: buttonHeigth
+        )
         addLocationButton.updateTitleEdgeInsets(bottomSafeArea: view.safeAreaInsets.bottom)
         
         containerView.frame = view.bounds.increaseHeightBy(hDiff: -buttonHeigth)
         shownViewController?.view.frame = containerView.bounds
-    }
-    
-    // MARK: - Setup
-    
-    private func getWeather() {
-        state = .loading
-        
-//        let coordinate = CLLocationCoordinate2D(latitude: 51.500334, longitude: -0.085013)
-//
-//        locationsStore.fetchLocation(coordinate: coordinate) { [weak self] (result) in
-//            switch result {
-//            case .success(let location):
-//                self?.state = .locations([location])
-//            case .error(let error):
-//                self?.state = .error(error)
-//            }
-//        }
     }
     
     // MARK: - State
@@ -118,7 +105,6 @@ class LocationsFeedViewController: UIViewController {
         
         switch newState {
         case .locations(let locations):
-            
             let sections = locations.map { Section(with: $0) }
             
             if let contentViewController = contentViewController, shownViewController == contentViewController {
@@ -127,14 +113,18 @@ class LocationsFeedViewController: UIViewController {
                 shownViewController?.remove()
                 
                 contentViewController = LocationsFeedContentViewController(sections: sections)
+                contentViewController!.view.alpha = 0
                 add(contentViewController!)
                 containerView.addSubview(contentViewController!.view)
+                
+                UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut], animations: {
+                    self.contentViewController!.view.alpha = 1
+                })
                 
                 shownViewController = contentViewController
             }
             
         case .empty:
-            
             shownViewController?.remove()
             
             let emptyViewController = EmptyViewController()
@@ -144,7 +134,6 @@ class LocationsFeedViewController: UIViewController {
             shownViewController = emptyViewController
             
         case .loading:
-            
             shownViewController?.remove()
             
             let loaderViewController = LoaderViewController()
@@ -155,7 +144,8 @@ class LocationsFeedViewController: UIViewController {
             
         case .error:
             break
-        case .none: break
+        case .none:
+            break
         }
         
         view.setNeedsLayout()

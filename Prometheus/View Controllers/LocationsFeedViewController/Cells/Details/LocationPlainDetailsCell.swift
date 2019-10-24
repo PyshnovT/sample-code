@@ -42,7 +42,7 @@ class LocationPlainDetailsCell: UITableViewCell {
 extension LocationPlainDetailsCell {
     
     static func height(for model: PlainDetails, maximumWidth: CGFloat) -> CGFloat {
-        return 44
+        return 50
     }
     
 }

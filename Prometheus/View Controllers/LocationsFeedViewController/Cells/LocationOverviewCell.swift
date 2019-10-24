@@ -53,7 +53,7 @@ extension LocationOverviewCell {
         let titleSize = model.title.size(for: maxLabelWidth, font: Constants.titleFont)
         let coordinateSize = model.coordinate.size(for: maxLabelWidth, font: Constants.coordinateFont)
         let currentWeatherSize = model.currentWeather?.size(for: maxLabelWidth, font: Constants.currentWeatherFont) ?? CGSize.zero
-        let summaryWeatherSize = model.currentWeather?.size(for: maxLabelWidth, font: Constants.currentWeatherFont) ?? CGSize.zero
+        let summaryWeatherSize = model.summaryWeather?.size(for: maxLabelWidth, font: Constants.currentWeatherFont) ?? CGSize.zero
         
         return
             insets.top +

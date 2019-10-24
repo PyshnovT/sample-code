@@ -195,6 +195,34 @@ extension CGRect {
 
 }
 
+
+extension CGRect {
+    
+    // MARK: - Insets
+    
+    /// Cuts area by insets
+    func appliedInsets(insets: UIEdgeInsets) -> CGRect {
+        var rect = self
+        rect.origin.y = rect.origin.y + insets.top
+        rect.origin.x = rect.origin.x + insets.left
+        rect.size.height = rect.size.height - insets.top - insets.bottom
+        rect.size.width = rect.size.width - insets.left - insets.right
+        return rect
+    }
+    
+    /// Adds area by padding
+    func appendingPadding(_ padding: CGFloat) -> CGRect {
+        var rect = self
+        rect.origin.y = rect.origin.y - padding
+        rect.origin.x = rect.origin.x - padding
+        rect.size.height = rect.size.height + padding + padding
+        rect.size.width = rect.size.width + padding + padding
+        return rect
+    }
+    
+}
+
+
 func degreesToRadians(_ number: Double) -> Double {
     return number * .pi / 180
 }
