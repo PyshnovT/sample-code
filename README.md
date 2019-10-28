@@ -1,0 +1,1 @@
+Clean code. MVC architecture.
